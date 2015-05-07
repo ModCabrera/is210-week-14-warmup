@@ -7,8 +7,13 @@ from data import FRUIT
 
 def get_cost_per_item(shoplist):
     """Returns Dictionary with fruits and total cost per item.
+
     Args:
+        data.FRUIT (dict) = Dictionary of fruits and prices.
+
     Returns:
+        Dictionary of Fruits with total price for each.
+
     Examples:
         >>> get_cost_per_item({'Lime': 12,
                    'Red Pear': 4,
@@ -23,11 +28,14 @@ def get_cost_per_item(shoplist):
 
 def get_total_cost(shoplist):
     """Returns Dictionary with fruits and total cost per item.
+
     Args:
         cart (dict)= Cost per Item.
         total (float)= Total cost for all items in cart.
+
     Returns:
         total (float) = Total cost for items in cart.
+
     Examples:
         >>> get_total_cost({'Lime': 12, 'Red Pear': 4, 'Peach': 24, 'Beet': 1})
         112.80000000000001
