@@ -4,6 +4,7 @@
 
 from data import FRUIT
 
+
 def get_cost_per_item(shoplist):
     """Returns Dictionary with fruits and total cost per item.
     Args:
@@ -16,7 +17,7 @@ def get_cost_per_item(shoplist):
                    })
         {'Lime': 7.08, 'Peach': 95.76, 'Red Pear': 9.96}
     """
-    return {fruit:(count*FRUIT[fruit]) for fruit, count in shoplist.iteritems()
+    return {fruit: (count*FRUIT[fruit]) for fruit, count in shoplist.iteritems()
             if fruit in FRUIT}
 
 
@@ -34,4 +35,3 @@ def get_total_cost(shoplist):
     cart = get_cost_per_item(shoplist)
     total = sum(item for item in cart.values())
     return total
-    
